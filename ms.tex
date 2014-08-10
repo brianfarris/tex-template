@@ -1,0 +1,33 @@
+%\documentclass[apj]{emulateapj}
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{color}
+\begin{document}
+
+\author{John Doe} 
+
+\title{Insert Title Here}
+
+\maketitle
+
+\section{Section 1}
+\label{sec:sec1}
+\section{Section 2}
+\label{sec:sec2}
+
+Reference to Fig.~\ref{fig:placeholder}
+\begin{figure}
+%\epsscale{1.0}
+%\plotone{placeholder.eps}
+\includegraphics[width=18pc]{placeholder.eps}\hspace{2pc}%
+
+\caption{Insert caption here}
+\label{fig:placeholder}
+\end{figure}
+
+Citation to \cite{farris14}.
+
+\bibliographystyle{plain}
+\bibliography{bibfile}
+
+\end{document}
